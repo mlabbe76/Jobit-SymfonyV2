@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ job.metier }}{% endblock %}
+
+{% block content %}
+
+
+    <h2>{{ job.entreprise }}</h2>
+    <section>
+        <div>
+            <p>{{ job.contrat ~ ' - ' ~ job.lieu ~ ' - ' ~ job.pays}}</p>
+            <hr>
+            <h2>{{ job.metier }}</h2>
+            <hr>
+        </div>
+        <div>
+            <img src='assets/{{ job.logo }}'>
+        </div>
+    </section>
+    <p> {{ job.description }}</p>
+    <p> {{ job.postuler }}</p>
+{% endblock %}

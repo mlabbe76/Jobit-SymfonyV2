@@ -5,10 +5,20 @@
 {% block content %}
 {% for c in categos %}
     <div>
-        <h2><a href="{{c}}">{{c}}</a></h2>
-    {% for job in jobs %}    
-        <a href=""></a>
-            <hr>
+    
+    
+        <!--  -->
+        <a href='/categorie?nomC={{ c }}'><h2>{{ c }}</h2></a>
+        <!--  -->
+
+            
+
+            <!--  -->
+            {% for job in jobs %}
+                            {% if job.category.nom == c %}
+                                <a href='/jobs?jobId={{ job.id }}' class='lienCard'>
+                                    <hr>
+            <!--  -->
             <section class="p-5 row justify-content-center">
                 <img  class="col-3" src="assets/{{job.logo}}" alt="">
                 <div class="col-6">
@@ -23,7 +33,11 @@
                     </ul>
                 </div>
             </section>
-    {% endfor %}
-    </div>
-{% endfor %}
+            <!--  -->
+            {% endif %}
+            <!--  -->
+            {% endfor %}
+            {% endfor %}
+
+</div>
 {% endblock %}
