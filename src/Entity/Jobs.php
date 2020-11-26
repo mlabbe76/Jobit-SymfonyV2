@@ -92,6 +92,11 @@ class Jobs
      */
     private $category;
 
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $metier;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -273,6 +278,18 @@ class Jobs
     public function setCategory(?Categories $category): self
     {
         $this->category = $category;
+
+        return $this;
+    }
+
+    public function getMetier(): ?string
+    {
+        return $this->metier;
+    }
+
+    public function setMetier(string $metier): self
+    {
+        $this->metier = $metier;
 
         return $this;
     }
