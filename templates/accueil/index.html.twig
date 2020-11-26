@@ -8,15 +8,12 @@
     
     
         <!--  -->
-        <a href='/categorie?nomC={{ c }}'><h2>{{ c }}</h2></a>
+        <a href='/job.categorie?nomC={{ c }}'><h2>{{ c }}</h2></a>
         <!--  -->
-
-            
-
             <!--  -->
             {% for job in jobs %}
                             {% if job.category.nom == c %}
-                                <a href='/jobs?jobId={{ job.id }}' class='lienCard'>
+                                <a href='/jobs?jobId={{ job.id }}' class=''>
                                     <hr>
             <!--  -->
             <section class="p-5 row justify-content-center">
@@ -39,5 +36,5 @@
             {% endfor %}
             {% endfor %}
 
-</div>
+        </div>
 {% endblock %}

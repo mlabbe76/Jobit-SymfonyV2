@@ -33,6 +33,8 @@ class Categories
      * @ORM\ManyToMany(targetEntity=Affilies::class, mappedBy="cat")
      */
     private $affilies;
+    
+    public function __toString(): string     {         return $this->nom;     }
 
     public function __construct()
     {
