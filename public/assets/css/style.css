@@ -1,0 +1,29 @@
+
+footer li {
+    display: inline;
+    list-style-type: none;
+    text-decoration: none ;
+    color: #fff;
+    }
+.titleaccueil {
+    display: flex;
+    justify-content: space-between;
+}
+main {
+    padding: 2%;
+    margin: 5% 10%;
+    
+}
+img {
+    width: 10%;
+}
+ul li {
+    max-width: 50%;
+    display: inline;
+    list-style-type: none;
+    margin: auto;
+}
+hr {
+    width: 50%;
+}
+

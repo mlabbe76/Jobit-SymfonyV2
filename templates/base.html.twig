@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Job It">
+        <meta name="author" content="Mickaël Labbé">
+        <title>{% block title %}Bienvenue sur Job It{% endblock %}</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="{{ asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
+        <link href="{{ asset('assets/css/style.css')}}"rel="stylesheet">
+
+    </head>
+    <body>
+        
+    
+        <main>
+            <div class="titleaccueil">
+            <h1>JOB-IT</h1>
+
+              
+                
+                    <input type="submit" name="posterjob" value="Poster Job"></input>
+            
+            
+
+            
+            
+            </div>
+        
+            <input type="search" name="posterjob" value="Rechercher" style="border-radius:8px;" ></input>
+        
+        </main>
+            
+
+
+         <!-- MAIN -->           
+            
+                {% block content %}         {% endblock %}
+            
+            
+        
+
+        <!-- FOOTER -->
+        <footer>
+            <nav class="navbar navbar-dark bg-dark">
+                <p>
+                <ul class="align-center">
+                    <a href=""><li href="#" class="py-5">A propos</li></a>
+                    <a href=""><li href="#">JOB-IT API</li></a>
+                    <a href=""><li href="#">Partenaire</li></a>
+                </ul>
+                </p>
+            </nav>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="{{ asset('assets/js/bootstrap.bundle.js') }}"></script>
+
+
+    </body>
+</html>

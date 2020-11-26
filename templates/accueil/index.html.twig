@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil Job It{% endblock %}
+
+{% block content %}
+{% for c in categos %}
+    <div>
+        <h2><a href="{{c}}">{{c}}</a></h2>
+    {% for job in jobs %}    
+        <a href=""></a>
+            <hr>
+            <section class="p-5 row justify-content-center">
+                <img  class="col-3" src="assets/{{job.logo}}" alt="">
+                <div class="col-6">
+                    <p>{{job.entreprise}}</p>
+                    <p>{{job.description}}</p>
+                    <ul>
+                        <div class="row justify-content-center">
+                        <li>{{job.contrat}}</li>
+                        <li>{{job.lieu}}</li>
+                        <li>{{job.pays}}</li>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+    {% endfor %}
+    </div>
+{% endfor %}
+{% endblock %}
