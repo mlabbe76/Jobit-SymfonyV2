@@ -1,13 +1,21 @@
 
-footer li {
-    display: inline;
-    list-style-type: none;
-    text-decoration: none ;
-    color: #fff;
-    }
+
+
+
+/**********Titre gabarit***********/
 .titleaccueil {
     display: flex;
     justify-content: space-between;
+}
+h1{
+    font-family: 'Anton', sans-serif;
+    color: tomato;
+}
+h2{
+    font-family: 'Anton', sans-serif;
+    color: cornflowerblue;
+    font-size: 200%;
+    padding-left: 5%;
 }
 main {
     padding: 2%;
@@ -23,10 +31,34 @@ ul li {
     list-style-type: none;
     margin: auto;
 }
+li{
+    color: black;
+}
 hr {
     width: 50%;
 }
 #bacAcc{
     padding: 5%;
 }
+p {
+    font-family: 'Anton', sans-serif; 
+    color: tomato;
+    font-size: 150%;
+}
+.bg-danger{
+    font-family: 'Anton', sans-serif;
+    border-color: blue;
+}
+/**********Form***********/
+form{
+    padding: 5% 20%;
+}
+
+/**********Footer***********/
+footer li {
+    display: inline;
+    list-style-type: none;
+    text-decoration: none ;
+    color: #fff;
+    }
 

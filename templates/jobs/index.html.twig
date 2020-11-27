@@ -4,7 +4,8 @@
 
 {% block content %}
 
-
+<section class='row justify-content-center'>
+    <article class='col-8'>
     <h2>{{ job.entreprise }}</h2>
     <section>
         <div>
@@ -19,4 +20,6 @@
     </section>
     <p> {{ job.description }}</p>
     <p> {{ job.postuler }}</p>
+    </article>
+</section>
 {% endblock %}
